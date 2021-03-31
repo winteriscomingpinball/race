@@ -30,7 +30,7 @@ void graphics_paint(void) {
 	unsigned int W,H,ix,iy,x,y, xfp,yfp;
 	static char buffer[32];
 
-	//if(SDL_MUSTLOCK(actualScreen)) SDL_LockSurface(actualScreen);
+	if(SDL_MUSTLOCK(actualScreen)) SDL_LockSurface(actualScreen);
 	
 	if (GameConf.m_ScreenRatio) { // Full screen
 		x=0;
