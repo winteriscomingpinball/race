@@ -515,7 +515,8 @@ void sound_init(int SampleRate)
 
 //#if defined(TARGET_PSP) || defined(TARGET_OD)
 //#define NGPC_CHIP_FREQUENCY		44100
-#define NGPC_CHIP_FREQUENCY		88200
+#define NGPC_CHIP_FREQUENCY		22050
+//#define NGPC_CHIP_FREQUENCY		88200
 //#else
 //#define NGPC_CHIP_FREQUENCY		8000
 //#endif
