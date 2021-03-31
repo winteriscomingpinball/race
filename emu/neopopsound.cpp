@@ -605,7 +605,8 @@ int sound_system_init()
     SDL_AudioSpec fmt, retFmt;
 
     //fmt.freq = chip_freq;  //11025 is good for dac_ sound
-    fmt.freq = 8000;
+    
+	fmt.freq = 11025;
     fmt.format = AUDIO_S16;
     fmt.channels = 1;
 //#ifdef TARGET_PSP
@@ -622,7 +623,7 @@ int sound_system_init()
         exit(1);
     }
 
-    //chip_freq = retFmt.freq;
+    chip_freq = retFmt.freq;
 
 	system_sound_chipreset();	//Resets chips
 
