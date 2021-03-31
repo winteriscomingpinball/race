@@ -604,9 +604,9 @@ int sound_system_init()
     //set up SDL sound here?
     SDL_AudioSpec fmt, retFmt;
 
-    //fmt.freq = chip_freq;  //11025 is good for dac_ sound
+    fmt.freq = chip_freq;  //11025 is good for dac_ sound
     
-	fmt.freq = 11025;
+	//fmt.freq = 11025;
     fmt.format = AUDIO_S16;
     fmt.channels = 1;
 //#ifdef TARGET_PSP
