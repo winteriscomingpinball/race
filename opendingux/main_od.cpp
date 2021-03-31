@@ -30,7 +30,7 @@ void graphics_paint(void) {
 	unsigned int W,H,ix,iy,x,y, xfp,yfp;
 	static char buffer[32];
 
-	if(SDL_MUSTLOCK(actualScreen)) SDL_LockSurface(actualScreen);
+	//if(SDL_MUSTLOCK(actualScreen)) SDL_LockSurface(actualScreen);
 	
 	if (GameConf.m_ScreenRatio) { // Full screen
 		x=0;
@@ -40,6 +40,13 @@ void graphics_paint(void) {
 		ix=(SYSVID_WIDTH<<16)/W;
 		iy=(SYSVID_HEIGHT<<16)/H;
 		xfp = 300;yfp = 1;
+		
+		SDL_Rect srcrect;
+
+		srcrect.x = 0;
+		srcrect.y = 0;
+		srcrect.w = W;
+		srcrect.h = H;
 
 		//do   
 		//{
@@ -51,7 +58,8 @@ void graphics_paint(void) {
 		//	} while (--W);
 		//	y+=iy;
 		//} while (--H);
-		SDL_BlitSurface(screen,0,actualScreen,0);
+		SDL_UnlockSurface(actualScreen)
+		SDL_BlitSurface(screen,&srcrect,actualScreen,NULL);
 	}
 	else { // Original show
 		#define BLIT_WIDTH (160)
