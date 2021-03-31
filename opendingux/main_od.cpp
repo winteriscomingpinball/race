@@ -51,7 +51,7 @@ void graphics_paint(void) {
 		
 		ix=(SYSVID_WIDTH<<16)/W;
 		iy=(SYSVID_HEIGHT<<16)/H;
-		xfp = 230;yfp = 1;
+		xfp = 1;yfp = 1;
 		
 
 		//do   
@@ -64,7 +64,7 @@ void graphics_paint(void) {
 		//	} while (--W);
 		//	y+=iy;
 		//} while (--H);
-		SDL_UnlockSurface(actualScreen);
+		//SDL_UnlockSurface(actualScreen);
 		SDL_BlitSurface(screen,NULL,actualScreen,NULL);
 	}
 	else { // Original show
