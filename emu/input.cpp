@@ -45,7 +45,7 @@ extern int zoom;
 #define DIK_LEFT SDLK_LEFT
 #define DIK_RIGHT SDLK_RIGHT
 #define DIK_SPACE SDLK_RSHIFT
-#define DIK_N SDLK_K_MULTIPLY
+#define DIK_N SDLK_KP_MULTIPLY
 #define DIK_S SDLK_ESCAPE
 #define DIK_O SDLK_F1
 #endif
@@ -86,7 +86,7 @@ BOOL InitInput(HWND hwnd)
 	m_sysInfo[NGP].InputKeys[KEY_LEFT]		= SDLK_LEFT;
 	m_sysInfo[NGP].InputKeys[KEY_RIGHT]		= SDLK_RIGHT;
 	m_sysInfo[NGP].InputKeys[KEY_BUTTON_A]	= SDLK_RSHIFT;
-	m_sysInfo[NGP].InputKeys[KEY_BUTTON_B]	= SDLK_K_MULTIPLY;
+	m_sysInfo[NGP].InputKeys[KEY_BUTTON_B]	= SDLK_KP_MULTIPLY;
 	m_sysInfo[NGP].InputKeys[KEY_SELECT]		= SDLK_F1;	// Option button
 	m_sysInfo[NGP].InputKeys[KEY_START]		= SDLK_RETURN;	// Option button
 	m_sysInfo[NGP].InputKeys[KEY_BUTTON_X]	= SDLK_SPACE;
@@ -99,7 +99,7 @@ BOOL InitInput(HWND hwnd)
 	m_sysInfo[NGPC].InputKeys[KEY_LEFT]		= SDLK_LEFT;
 	m_sysInfo[NGPC].InputKeys[KEY_RIGHT]		= SDLK_RIGHT;
 	m_sysInfo[NGPC].InputKeys[KEY_BUTTON_A]	= SDLK_RSHIFT;
-	m_sysInfo[NGPC].InputKeys[KEY_BUTTON_B]	= SDLK_K_MULTIPLY;
+	m_sysInfo[NGPC].InputKeys[KEY_BUTTON_B]	= SDLK_KP_MULTIPLY;
 	m_sysInfo[NGPC].InputKeys[KEY_SELECT]		= SDLK_F1;	// Option button
 	m_sysInfo[NGPC].InputKeys[KEY_START]		= SDLK_RETURN;	// Option button
 	m_sysInfo[NGPC].InputKeys[KEY_BUTTON_X]	= SDLK_SPACE;
