@@ -103,7 +103,7 @@ void initSDL(void) {
 	}
 	atexit(SDL_Quit);
 
-	actualScreen = SDL_SetVideoMode(320, 240, 16, SDL_DOUBLEBUF | SDL_HWSURFACE );
+	actualScreen = SDL_SetVideoMode(320, 240, 16, SDL_HWSURFACE );
 	if(actualScreen == NULL) {
 		fprintf(stderr, "Couldn't set video mode: %s\n", SDL_GetError());
 		exit(1);
