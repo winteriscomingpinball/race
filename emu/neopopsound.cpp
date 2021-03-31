@@ -49,7 +49,7 @@ SoundChip noiseChip;
 //#else
 //#define DAC_BUFFERSIZE		(256 * 1024) //at (256 * 1024) the PC version will crash on MS2 intro
 //#endif
-define DAC_BUFFERSIZE 1024
+#define DAC_BUFFERSIZE 1024
 
 int dacLBufferRead, dacLBufferWrite, dacLBufferCount;
 _u16 dacBufferL[DAC_BUFFERSIZE];
