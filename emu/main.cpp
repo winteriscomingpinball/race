@@ -465,7 +465,7 @@ int main(int argc, char *argv[])
 
 	PSP_JoystickOpen();
 
-	actualScreen = SDL_SetVideoMode (SIZEX, SIZEY, 16, SDL_SWSURFACE);
+	actualScreen = SDL_SetVideoMode (240, 180, 16, SDL_HWSURFACE|SDL_FULLSCREEN);
 	if (actualScreen == NULL)
 	{
 		fprintf(stderr, "SDL_SetVideoMode failed!\n");
