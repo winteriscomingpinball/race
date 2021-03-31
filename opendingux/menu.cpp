@@ -401,7 +401,7 @@ void screen_showmainmenu(MENU *menu) {
 		mi = menu->m + menu->itemCur; // pointer to highlit menu option
 
 		// A - apply parameter or enter submenu
-		if (keys[SDLK_LCTRL] == SDL_PRESSED) { 
+		if (keys[SDLK_F1] == SDL_PRESSED) { 
 			if (!keya) {
 				keya = 1; 
 				screen_waitkeyarelease();
@@ -411,7 +411,7 @@ void screen_showmainmenu(MENU *menu) {
 		else keya=0;
 
 		// B - exit or back to previous menu
-		if (keys[SDLK_LALT] == SDL_PRESSED) { 
+		if (keys[SDLK_RSHIFT] == SDL_PRESSED) { 
 			if (!keyb) {
 				keyb = 1; if (menu != &mnuMainMenu) gameMenu = false;
 			}
