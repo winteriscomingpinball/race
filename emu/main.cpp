@@ -225,7 +225,7 @@ void initSysInfo()
 
 #endif
 	m_emuInfo.stereo = 1;
-	m_emuInfo.fps = 30;//30;//100;  //Flavor, tweak this!
+	//m_emuInfo.fps = 60;//30;//100;  //Flavor, tweak this!
 
 /*	m_sysInfo[NONE].hSize = 160;
 	m_sysInfo[NONE].vSize = 152;
