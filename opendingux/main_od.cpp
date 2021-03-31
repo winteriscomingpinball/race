@@ -56,7 +56,7 @@ void graphics_paint(void) {
 		#define BLIT_WIDTH (160)
 		#define BLIT_HEIGHT (152)
 		x=((240 - BLIT_WIDTH)/2);
-		y=((180->h - BLIT_HEIGHT)/2); 
+		y=((180 - BLIT_HEIGHT)/2); 
 		//x=0;
 		//y=0;
 		
