@@ -8949,7 +8949,7 @@ int ngOverflow = 0;
 
 #ifdef FRAMESKIP
 //#define AUTO_FRAMESKIP
-#define FIXED_FRAMESKIP 2
+#define FIXED_FRAMESKIP 1
 #define MAX_SKIPFRAMES 1
 #endif
 
