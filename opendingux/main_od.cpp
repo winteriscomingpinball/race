@@ -41,16 +41,17 @@ void graphics_paint(void) {
 		iy=(SYSVID_HEIGHT<<16)/H;
 		xfp = 300;yfp = 1;
 
-		do   
-		{
-			unsigned short *buffer_mem=(buffer_flip+((y>>16)*320));
-			W=240; x=0;
-			do {
-				*buffer_scr++=buffer_mem[x>>16];
-				x+=ix;
-			} while (--W);
-			y+=iy;
-		} while (--H);
+		//do   
+		//{
+		//	unsigned short *buffer_mem=(buffer_flip+((y>>16)*320));
+		//	W=240; x=0;
+		//	do {
+		//		*buffer_scr++=buffer_mem[x>>16];
+		//		x+=ix;
+		//	} while (--W);
+		//	y+=iy;
+		//} while (--H);
+		SDL_BlitSurface(screen,0,actualscreen,0);
 	}
 	else { // Original show
 		#define BLIT_WIDTH (160)
