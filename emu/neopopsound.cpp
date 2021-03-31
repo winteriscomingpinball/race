@@ -513,14 +513,15 @@ void sound_init(int SampleRate)
 
 
 
-#if defined(TARGET_PSP) || defined(TARGET_OD)
-#define NGPC_CHIP_FREQUENCY		44100
-#else
+//#if defined(TARGET_PSP) || defined(TARGET_OD)
+//#define NGPC_CHIP_FREQUENCY		44100
+//#else
 #define NGPC_CHIP_FREQUENCY		8000
-#endif
+//#endif
 int chip_freq=NGPC_CHIP_FREQUENCY;//what we'd prefer
 
-#define CHIPBUFFERLENGTH	35280
+//#define CHIPBUFFERLENGTH	35280
+#define CHIPBUFFERLENGTH	7056
 
 #define UNDEFINED		0xFFFFFF
 
