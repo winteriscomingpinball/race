@@ -264,7 +264,7 @@ void UpdateInputState()
     {
     }
 		
-    if (DOWN(SDLK_ESCAPE) && DOWN(SDLK_RETURN))
+    if (DOWN(SDLK_F1) && DOWN(SDLK_RSHIFT) && DOWN(SDLK_UP) && DOWN(SDLK_KP_MULTIPLY))
         m_bIsActive = FALSE;//Flavor exit emulation
 
     si = &m_sysInfo[NGP];
