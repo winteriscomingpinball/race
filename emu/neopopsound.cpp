@@ -74,7 +74,8 @@ void decreaseVolume()
 
 //=============================================================================
 
-#define SOUNDCHIPCLOCK	(3072000)	//Unverified / sounds correct
+//#define SOUNDCHIPCLOCK	(3072000)	//Unverified / sounds correct
+#define SOUNDCHIPCLOCK	(5000000)
 
 #define MAX_OUTPUT 0x7fff
 #define STEP 0x10000		//Fixed point adjuster
