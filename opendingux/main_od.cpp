@@ -37,9 +37,21 @@ void graphics_paint(void) {
 		y=0; 
 		W=320;
 		H=240;
-		//ix=(SYSVID_WIDTH<<16)/W;
-		//iy=(SYSVID_HEIGHT<<16)/H;
-		//xfp = 300;yfp = 1;
+		
+		
+		SDL_Rect srcrect;
+
+		x=112;//((240 - 160)/2);
+		y=104;//((180 - 152)/2);
+
+		srcrect.x = 0;
+		srcrect.y = 0;
+		srcrect.w = W;
+		srcrect.h = H;
+		
+		ix=(SYSVID_WIDTH<<16)/W;
+		iy=(SYSVID_HEIGHT<<16)/H;
+		xfp = 300;yfp = 1;
 
 		//do   
 		//{
@@ -51,7 +63,7 @@ void graphics_paint(void) {
 		//	} while (--W);
 		//	y+=iy;
 		//} while (--H);
-		//SDL_UnlockSurface(actualScreen);
+		SDL_UnlockSurface(actualScreen);
 		SDL_BlitSurface(screen,NULL,actualScreen,NULL);
 	}
 	else { // Original show
