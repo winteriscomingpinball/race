@@ -622,7 +622,7 @@ int sound_system_init()
         exit(1);
     }
 
-    chip_freq = retFmt.freq;
+    //chip_freq = retFmt.freq;
 
 	system_sound_chipreset();	//Resets chips
 
