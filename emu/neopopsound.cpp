@@ -75,7 +75,7 @@ void decreaseVolume()
 //=============================================================================
 
 //#define SOUNDCHIPCLOCK	(3072000)	//Unverified / sounds correct
-#define SOUNDCHIPCLOCK	(5000000)
+#define SOUNDCHIPCLOCK	(4000000)
 
 #define MAX_OUTPUT 0x7fff
 #define STEP 0x10000		//Fixed point adjuster
@@ -517,7 +517,7 @@ void sound_init(int SampleRate)
 
 //#if defined(TARGET_PSP) || defined(TARGET_OD)
 #define NGPC_CHIP_FREQUENCY		44100
-//#define NGPC_CHIP_FREQUENCY		22050
+//#define 22050
 //#define NGPC_CHIP_FREQUENCY		88200
 //#else
 //#define NGPC_CHIP_FREQUENCY		8000
@@ -525,7 +525,8 @@ void sound_init(int SampleRate)
 int chip_freq=NGPC_CHIP_FREQUENCY;//what we'd prefer
 
 //#define CHIPBUFFERLENGTH	35280
-#define CHIPBUFFERLENGTH	7056
+//#define CHIPBUFFERLENGTH	7056
+#define CHIPBUFFERLENGTH	1024
 
 #define UNDEFINED		0xFFFFFF
 
@@ -603,13 +604,14 @@ int sound_system_init()
     //set up SDL sound here?
     SDL_AudioSpec fmt, retFmt;
 
-    fmt.freq = chip_freq;  //11025 is good for dac_ sound
+    //fmt.freq = chip_freq;  //11025 is good for dac_ sound
+    fmt.freq = 8000;
     fmt.format = AUDIO_S16;
     fmt.channels = 1;
-#ifdef TARGET_PSP
-    fmt.samples = 512;
-#else
-    fmt.samples = 512;
+//#ifdef TARGET_PSP
+//    fmt.samples = 512;
+//#else
+    fmt.samples = 256;
 #endif
     fmt.callback = mixaudioCallback;
     fmt.userdata = NULL;
