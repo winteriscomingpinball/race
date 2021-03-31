@@ -92,15 +92,15 @@ extern int romSize;
 int handleInputFile(char *romName);
 void mainemuinit();
 
-//#ifdef __GP32__
-//#define HOST_FPS 60  //100 was what it was, originally
-//#else
-//#ifdef TARGET_PSP   //to call these FPS is a bit of a misnomer
-//#define HOST_FPS 60  //the number of frames we want to draw to the host's screen every second
-//#else
-//#define HOST_FPS 60  //100 was what it was, originally
-//#endif
-//#endif
-#define HOST_FPS 50
+#ifdef __GP32__
+#define HOST_FPS 60  //100 was what it was, originally
+#else
+#ifdef TARGET_PSP   //to call these FPS is a bit of a misnomer
+#define HOST_FPS 60  //the number of frames we want to draw to the host's screen every second
+#else
+#define HOST_FPS 60  //100 was what it was, originally
+#endif
+#endif
+
 #endif
 
