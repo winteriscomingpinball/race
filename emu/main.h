@@ -101,6 +101,6 @@ void mainemuinit();
 //#define HOST_FPS 60  //100 was what it was, originally
 //#endif
 //#endif
+#define HOST_FPS 100
+#endif
 
-//#endif
-//#define HOST_FPS 100
