@@ -58,7 +58,7 @@ void graphics_paint(void) {
 		//	} while (--W);
 		//	y+=iy;
 		//} while (--H);
-		SDL_UnlockSurface(actualScreen)
+		SDL_UnlockSurface(actualScreen);
 		SDL_BlitSurface(screen,&srcrect,actualScreen,NULL);
 	}
 	else { // Original show
