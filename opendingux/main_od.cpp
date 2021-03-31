@@ -46,8 +46,8 @@ void graphics_paint(void) {
 		x=112;//((240 - 160)/2);
 		y=104;//((180 - 152)/2);
 
-		srcrect.x = x;
-		srcrect.y = y;
+		srcrect.x = 0;
+		srcrect.y = 0;
 		srcrect.w = W;
 		srcrect.h = H;
 
