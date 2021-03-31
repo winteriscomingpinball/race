@@ -51,7 +51,8 @@ void graphics_paint(void) {
 		
 		ix=(SYSVID_WIDTH<<16)/W;
 		iy=(SYSVID_HEIGHT<<16)/H;
-		xfp = 300;yfp = 1;
+		xfp = 230;yfp = 1;
+		
 
 		//do   
 		//{
