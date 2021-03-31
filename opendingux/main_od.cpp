@@ -37,14 +37,14 @@ void graphics_paint(void) {
 		y=0; 
 		W=240;
 		H=180;
-		ix=(SYSVID_WIDTH<<16)/W;
-		iy=(SYSVID_HEIGHT<<16)/H;
-		xfp = 300;yfp = 1;
+		//ix=(SYSVID_WIDTH<<16)/W;
+		//iy=(SYSVID_HEIGHT<<16)/H;
+		//xfp = 300;yfp = 1;
 		
 		SDL_Rect srcrect;
 		
-		x=((240 - BLIT_WIDTH)/2);
-		y=((180 - BLIT_HEIGHT)/2);
+		x=112;//((240 - 160)/2);
+		y=104;//((180 - 152)/2);
 
 		srcrect.x = x;
 		srcrect.y = y;
