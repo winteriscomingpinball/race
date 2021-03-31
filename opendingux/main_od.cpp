@@ -42,9 +42,12 @@ void graphics_paint(void) {
 		xfp = 300;yfp = 1;
 		
 		SDL_Rect srcrect;
+		
+		x=((240 - BLIT_WIDTH)/2);
+		y=((180 - BLIT_HEIGHT)/2);
 
-		srcrect.x = 0;
-		srcrect.y = 0;
+		srcrect.x = x;
+		srcrect.y = y;
 		srcrect.w = W;
 		srcrect.h = H;
 
