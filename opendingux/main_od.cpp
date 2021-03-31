@@ -35,8 +35,8 @@ void graphics_paint(void) {
 	if (GameConf.m_ScreenRatio) { // Full screen
 		x=0;
 		y=0; 
-		W=320;
-		H=240;
+		W=240;
+		H=180;
 		ix=(SYSVID_WIDTH<<16)/W;
 		iy=(SYSVID_HEIGHT<<16)/H;
 		xfp = 300;yfp = 1;
@@ -44,7 +44,7 @@ void graphics_paint(void) {
 		do   
 		{
 			unsigned short *buffer_mem=(buffer_flip+((y>>16)*320));
-			W=320; x=0;
+			W=240; x=0;
 			do {
 				*buffer_scr++=buffer_mem[x>>16];
 				x+=ix;
@@ -55,8 +55,11 @@ void graphics_paint(void) {
 	else { // Original show
 		#define BLIT_WIDTH (160)
 		#define BLIT_HEIGHT (152)
-		x=((screen->w - BLIT_WIDTH)/2);
-		y=((screen->h - BLIT_HEIGHT)/2); 
+		x=((240 - BLIT_WIDTH)/2);
+		y=((180->h - BLIT_HEIGHT)/2); 
+		//x=0;
+		//y=0;
+		
 		W=BLIT_WIDTH;
 		H=BLIT_HEIGHT;
 		ix=(BLIT_WIDTH<<16)/W;
