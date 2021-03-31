@@ -524,9 +524,9 @@ void sound_init(int SampleRate)
 //#endif
 int chip_freq=NGPC_CHIP_FREQUENCY;//what we'd prefer
 
-//#define CHIPBUFFERLENGTH	35280
+#define CHIPBUFFERLENGTH	35280
 //#define CHIPBUFFERLENGTH	7056
-#define CHIPBUFFERLENGTH	1024
+//#define CHIPBUFFERLENGTH	1024
 
 #define UNDEFINED		0xFFFFFF
 
@@ -612,7 +612,7 @@ int sound_system_init()
 //#ifdef TARGET_PSP
 //    fmt.samples = 512;
 //#else
-    fmt.samples = 256;
+    fmt.samples = 400;
 //#endif
     fmt.callback = mixaudioCallback;
     fmt.userdata = NULL;
