@@ -44,10 +44,10 @@ extern int zoom;
 #define DIK_DOWN SDLK_DOWN
 #define DIK_LEFT SDLK_LEFT
 #define DIK_RIGHT SDLK_RIGHT
-#define DIK_SPACE SDLK_a
-#define DIK_N SDLK_b
+#define DIK_SPACE SDLK_RSHIFT
+#define DIK_N SDLK_K_MULTIPLY
 #define DIK_S SDLK_ESCAPE
-#define DIK_O SDLK_SPACE
+#define DIK_O SDLK_F1
 #endif
 
 #ifdef TARGET_OD
