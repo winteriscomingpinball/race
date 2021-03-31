@@ -221,10 +221,10 @@ void initSysInfo()
 	m_emuInfo.sample_rate = 0;
 #else
 	//m_emuInfo.sample_rate = 44100;
-	m_emuInfo.sample_rate = 8000;
+	m_emuInfo.sample_rate = 1000;
 
 #endif
-	m_emuInfo.stereo = 1;
+	m_emuInfo.stereo = 0;
 	//m_emuInfo.fps = 60;//30;//100;  //Flavor, tweak this!
 
 /*	m_sysInfo[NONE].hSize = 160;
