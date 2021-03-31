@@ -51,7 +51,7 @@ void graphics_paint(void) {
 		//	} while (--W);
 		//	y+=iy;
 		//} while (--H);
-		SDL_BlitSurface(screen,0,actualscreen,0);
+		SDL_BlitSurface(screen,0,actualScreen,0);
 	}
 	else { // Original show
 		#define BLIT_WIDTH (160)
