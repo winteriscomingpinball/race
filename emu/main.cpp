@@ -220,10 +220,12 @@ void initSysInfo()
 #ifdef NO_SOUND_OUTPUT
 	m_emuInfo.sample_rate = 0;
 #else
-	m_emuInfo.sample_rate = 44100;
+	//m_emuInfo.sample_rate = 44100;
+	m_emuInfo.sample_rate = 8000;
+
 #endif
 	m_emuInfo.stereo = 1;
-	//m_emuInfo.fps = 60;//30;//100;  //Flavor, tweak this!
+	m_emuInfo.fps = 30;//30;//100;  //Flavor, tweak this!
 
 /*	m_sysInfo[NONE].hSize = 160;
 	m_sysInfo[NONE].vSize = 152;
