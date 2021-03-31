@@ -612,7 +612,7 @@ int sound_system_init()
 //    fmt.samples = 512;
 //#else
     fmt.samples = 256;
-#endif
+//#endif
     fmt.callback = mixaudioCallback;
     fmt.userdata = NULL;
 
